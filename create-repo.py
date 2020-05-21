@@ -1,7 +1,7 @@
 from github import Github
 import os, time
 
-g = Github("USERNAME", "PASSWORD")
+g = Github("ACCESS TOKEN")
 reponame = input("Please name your new repository (lowercase and use - for spaces):")
 user = g.get_user()
 repo = user.create_repo(reponame)
